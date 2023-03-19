@@ -1,0 +1,101 @@
+<record id="add_property_view_form" model="ir.ui.view">
+        <field name="name">add.property.form</field>
+        <field name="model">estate_property</field>
+        <field name="arch" type="xml">
+            <form string="Properties">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+
+                    </div>
+
+                    <div class="oe_title">
+                        <div>
+                            <label for="name"/>
+                        </div>
+                        <h2 class="mb32">
+                            <field name="name" placeholder="Enter a title for the property" class="mb16"/>
+                        </h2>
+                        <div>
+                            <label for="description"/>
+                        </div>
+                        <h3 class="mb32">
+                            <field name="description" placeholder="Provide a small description" class="mb16"/>
+                        </h3>
+                        <div>
+                           <label for="postcode"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="postcode" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="date_availability"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="date_availability" placeholder="" class="mb16"/>
+                        </h5>
+                         <div>
+                           <label for="expected_price"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="expected_price" placeholder="" class="mb16"/>
+                        </h5>
+                         <div>
+                           <label for="selling_price"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="selling_price" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="bedrooms"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="bedrooms" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="living_area"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="living_area" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="facades"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="facades" placeholder="" class="mb16"/>
+                        </h5>
+                         <div>
+                           <label for="garage"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="garage" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="garden_area"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="garden_area" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="garden_orientation"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="garden_orientation" placeholder="" class="mb16"/>
+                        </h5>
+                        <div>
+                           <label for="state"/>
+                        </div>
+                        <h5 class="mb32">
+                            <field name="state" placeholder="" class="mb16"/>
+                        </h5>
+
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <header>
+                    <button string="Edit Property" type="object"/> //name="edit_property"/>
+
+                </header>

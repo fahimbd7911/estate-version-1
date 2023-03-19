@@ -1,0 +1,28 @@
+from odoo import models, fields
+
+
+class FirstCasePartner(models.Model):
+    _name = 'res.partner'
+    _inherit = 'res.partner'
+
+    # fields
+    educational_bg = fields.Selection(...)
+
+
+
+
+class SecondCasePartner(models.Model):
+    _name = 'second.case.partner'
+    _inherit = 'res.partner'
+
+    # fields
+
+
+
+class ThirdCasePartner(models.Model):
+    _name = 'third.case.partner'
+    _inherits = {
+        'partner_id': 'res.partner'
+    }
+
+    partner_id = fields.Many2one('res.partner', string='Customer')
